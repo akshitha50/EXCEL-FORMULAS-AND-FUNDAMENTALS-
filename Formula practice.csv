@@ -1,0 +1,16 @@
+﻿Formula,Example,Purpose,,Region Code,Region,,Profit,Profit Status,,SUMIFS Example,
+VLOOKUP,Find customer/region,Search for information,,R1,East,,1.08,Profit,,East Region Sales,215771.96
+XLOOKUP,Find product/sales,Modern lookup,,R2,West,,,Loss,,,
+IF,Check Profit,Make a decision,,R3,Central,,,,,East + Technology Sales,40135.89
+SUMIFS,Total Sales by Region,Sum using conditions,,R4,South,,,,,,
+COUNTIFS,Count orders by Region,Count using conditions,,,,,,,,COUNTIFS Example,
+,,,,R2,West,,,,,East Region Orders,2562
+,,,,,,,,,,East + Technology Orders,496
+,,,,P999,Not Found,,,,,,
+,,,,,Loss,,,,,Text Functions,
+,,,,,,,,,,Sample Text,ORD-1001
+,,,,,,,,,,LEFT,ORD
+,,,,,,,,,,RIGHT,1001
+,,,,,,,,,,LEN,8
+,,,,,,,,,,UPPER,ORD-1001
+,,,,,,,,,,LOWER,ord-1001
